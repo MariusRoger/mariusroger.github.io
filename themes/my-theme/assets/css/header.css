@@ -1,15 +1,17 @@
-
 header {
+    position: sticky;
+    top: 0;
+    background: var(--background-header);
+    border-bottom: 1px solid var(--border-primary);
+    font-weight: 500;
+}
+
+header > .container {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     row-gap: 1rem;
-    position: sticky;
-    top: 0;
     padding: var(--header-padding);
-    background: var(--background-header);
-    border-bottom: 1px solid var(--border-primary);
-    font-weight: 500;
 }
 
 header a {
@@ -44,7 +46,7 @@ header a {
 }
 
 .nav-item {
-    height: calc(var(--header-height) - 4px);
+    height: var(--header-height);
     transition: border-color 0.2s;
     background-color: var(--background-secondary);
     border: 2px solid var(--background-secondary);
@@ -57,7 +59,7 @@ header a {
     justify-content: center;
     align-items: center;
     height: 100%;
-    padding: 0 calc(1rem - 2px);
+    padding: 0 1rem;
     transition: color 0.2s;
     border-radius: inherit;
     font-size: large;
