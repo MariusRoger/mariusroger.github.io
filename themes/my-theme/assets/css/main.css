@@ -1,24 +1,45 @@
+:root {
+    --header-height: 3rem;
+    --header-padding: 1rem;
+    --footer-padding: 1rem;
+}
+
+/* https://stackoverflow.com/questions/34550467/why-is-there-a-default-margin-on-the-body-element */
+*
+{
+    margin: 0px; padding: 0px;
+}
+
+
 body {
-  color: #222;
-  font-family: sans-serif;
-  line-height: 1.5;
-  margin: 1rem;
-  /* max-width: 768px; */
+    font-optical-sizing: auto;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background: var(--background-primary);
+    font-family: "Outfit", Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 1.5;
+    color: var(--text-color);
 }
 
-body 
-
-header {
-  border-bottom: 1px solid #222;
-  margin-bottom: 1rem;
+main h1 {
+    color: var(--h1-color);
 }
 
-footer {
-  border-top: 1px solid #222;
-  margin-top: 1rem;
+main, main ul {
+    padding: 20px;
 }
 
-a {
-  color: #00e;
-  text-decoration: none;
+h1, h2 {
+    font-weight: 500;
+}
+
+main a {
+    color: var(--link-color);
+}
+
+main a:hover {
+    color: var(--link-color-hover);
 }

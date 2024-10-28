@@ -1,0 +1,32 @@
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: auto;
+    padding: var(--footer-padding);
+    border-top: 1px solid var(--border-primary);
+    color: var(--footer-text);
+}
+    
+footer a {
+    color: var(--footer-link);
+}
+
+footer a:hover {
+    color: var(--footer-link-hover);
+}
+
+.socials-menu {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.socials-item {
+    white-space: nowrap;
+    list-style-type: none;
+}
+
+.footer-social-small {
+    display: none;
+}

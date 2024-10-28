@@ -9,6 +9,6 @@ draft = false
 
 This is the home page of my (not quite finished yet) personal website.
 
-I use [Hugo](https://gohugo.io "Hugo website") and [GitHub Pages](https://github.com/MariusRoger/mariusroger.github.io "My GitHub Pages repository") to generate it : I learn how to use Hugo (and a lot of front-end stuff) as I build the place, so it's quite a fun process for me.
+It is hosted on [GitHub Pages](https://github.com/MariusRoger/mariusroger.github.io "My GitHub Pages repository"), and I use [Hugo](https://gohugo.io "Hugo website") to generate it : I learn how to use Hugo (and a lot of front-end stuff) as I build the place, so it's quite a fun process for me.
 
 I intend to decorate it by adding content, color and shapes over time.

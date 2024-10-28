@@ -1,3 +1,4 @@
+<link rel="stylesheet" href="{{ (resources.Get "css/colors.css").RelPermalink }}">
 {{- with resources.Get "css/main.css" }}
   {{- if eq hugo.Environment "development" }}
     <link rel="stylesheet" href="{{ .RelPermalink }}">
@@ -7,3 +8,5 @@
     {{- end }}
   {{- end }}
 {{- end }}
+<link rel="stylesheet" href="{{ (resources.Get "css/header.css").RelPermalink }}">
+<link rel="stylesheet" href="{{ (resources.Get "css/footer.css").RelPermalink }}">
