@@ -10,14 +10,18 @@ Renders a menu for the given menu ID.
 {{- $page := .page }}
 {{- $menuID := .menuID }}
 
-{{- with index site.Menus $menuID }}
-  <nav class="nav-bar">
-    <ul class="nav-menu">
-      {{- partial "inline/menu/walk.html" (dict "page" $page "menuEntries" .) }}
-    </ul>
-  </nav>
-{{- end }}
-
+<nav class="nav-bar">
+  <ul class="nav-menu">
+    {{- with index site.Menus $menuID }}
+    {{- partial "inline/menu/walk.html" (dict "page" $page "menuEntries" .) }}
+    {{- end }}
+    <li class="nav-item">
+      <a href="mailto:marius.roger@outlook.fr"
+      class="header-contact-link">Contact me</a>
+    </li>
+  </ul>
+</nav>
+    
 {{- define "partials/inline/menu/walk.html" }}
   {{- $page := .page }}
   {{- range .menuEntries }}

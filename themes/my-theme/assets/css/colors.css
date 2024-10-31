@@ -5,7 +5,7 @@
   --gray-50: hsl(0, 0%, 50%);
   --gray-80: hsl(0, 0%, 80%);
   --gray-90: hsl(0, 0%, 90%);
-  --gray-light: #f0f0f0;
+  --gray-light: #f7f7f7;
 
   
   --indigo-dye: rgb(27, 73, 101);
@@ -15,16 +15,23 @@
   --eggplant: #443742ff;
 
   --text-color: black;
-  --link-color: var(--indigo-dye);
-  --link-color-hover: var(--bittersweet);
+  --link-color: var(--text-color);
+  --link-color-hover: var(--verdigris);
 
   --h1-color: var(--bittersweet);
 
   --header-title: var(--indigo-dye);
   --header-navlink: var(--indigo-dye);
-  --header-navlink-hover: var(--bittersweet);
+  --header-navlink-hover: var(--verdigris);
   --header-navlink-hover-border: var(--header-navlink-hover);
   --header-navlink-selected: var(--header-navlink-hover);
+  --header-contact: white;
+  --header-contact-background: var(--bittersweet);
+  --header-contact-border: var(--header-contact-background);
+  --header-contact-hover: var(--header-contact-background);
+  --header-contact-background-hover: transparent;
+  --header-contact-border-hover: var(--header-contact-background);
+  
 
   --footer-text: var(--gray-50);
   --footer-link: var(--gray-50);
@@ -40,10 +47,11 @@
 @media (prefers-color-scheme: dark) {
   :root {
     --text-color: white;
-    --link-color: var(--verdigris);
 
-    --header-title: var(--verdigris);
-    --header-navlink: var(--verdigris);
+    --header-title: white;
+    --header-navlink: white;
+    --header-navlink-hover: var(--verdigris);
+    --header-contact: black;
     
     --footer-link-hover: var(--gray-80);
 

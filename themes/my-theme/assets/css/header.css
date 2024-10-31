@@ -15,8 +15,14 @@ header > .container {
 }
 
 header a {
-    color: var(--header-title);
+    transition-duration: var(--transition-time);
+    transition-property: color, background-color, border-color;
+    color: var(--header-navlink);
     text-decoration: none;
+}
+
+header a:hover {
+    color: var(--header-navlink-hover);
 }
 
 .header-logo {
@@ -46,11 +52,6 @@ header a {
 }
 
 .nav-item {
-    height: var(--header-height);
-    transition: border-color 0.2s;
-    background-color: var(--background-secondary);
-    border: 2px solid var(--background-secondary);
-    border-radius: 5px;
     list-style-type: none;
 }
 
@@ -58,23 +59,32 @@ header a {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100%;
+    height: var(--header-height);
     padding: 0 1rem;
-    transition: color 0.2s;
-    border-radius: inherit;
+    background-color: var(--background-secondary);
+    border: 2px solid var(--background-secondary);
+    border-radius: 5px;
     font-size: large;
-    color: var(--header-navlink);
     white-space: nowrap;
 }
 
-.nav-item:has(> a:hover) {
-    border-color: var(--header-navlink-hover-border);
-}
 
 .nav-item > a:hover {
-    color: var(--header-navlink-hover);
+    border-color: var(--header-navlink-hover-border);
 }
 
 .nav-item > a.active {
     color: var(--header-navlink-selected);
+}
+
+a.header-contact-link {
+    background-color: var(--header-contact-background);
+    border-color: var(--header-contact-border);
+    color: var(--header-contact);
+}
+
+a.header-contact-link:hover {
+    background-color: var(--header-contact-background-hover);
+    border-color: var(--header-contact-border-hover);
+    color: var(--header-contact-hover);
 }

@@ -3,14 +3,15 @@
     --header-padding: 1rem;
     --main-padding: 1rem 2rem;
     --footer-padding: 1rem;
+    --transition-time: .2s;
 }
 
 /* https://stackoverflow.com/questions/34550467/why-is-there-a-default-margin-on-the-body-element */
 *
 {
+    box-sizing: border-box;
     margin: 0px;
     padding: 0px;
-    box-sizing: border-box;
 }
 
 
@@ -34,9 +35,9 @@ header, main, footer {
 }
 
 .container {
-    max-width: 90rem;
     box-sizing: border-box;
     width: 100%;
+    max-width: 90rem;
 }
 
 main > .container {
