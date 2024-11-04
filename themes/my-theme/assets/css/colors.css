@@ -2,6 +2,7 @@
   --gray-dark: #101010;
   --gray-10: hsl(0, 0%, 10%);
   --gray-20: hsl(0, 0%, 20%);
+  --gray-35: hsl(0, 0%, 35%);
   --gray-50: hsl(0, 0%, 50%);
   --gray-80: hsl(0, 0%, 80%);
   --gray-90: hsl(0, 0%, 90%);
@@ -15,6 +16,7 @@
   --eggplant: #443742ff;
 
   --text-color: black;
+  --text-color-secondary: var(--gray-20);
   --link-color: var(--text-color);
   --link-color-hover: var(--verdigris);
 
@@ -38,15 +40,19 @@
   --footer-link-hover: var(--gray-20);
   
   --border-primary: var(--gray-80);
+  --border-secondary: var(--gray-50);
   --background-primary: white;
   --background-secondary: var(--gray-light);
   --background-header: var(--background-primary);
+  --background-secondary-hover: var(--gray-80);
+  --background-secondary-selected: var(--gray-90);
 }
   
 /* https://stackoverflow.com/questions/61899858/dark-mode-switch-with-prefers-color-scheme-dark */
 @media (prefers-color-scheme: dark) {
   :root {
     --text-color: white;
+    --text-color-secondary: var(--gray-80);
 
     --header-title: white;
     --header-navlink: white;
@@ -58,5 +64,7 @@
     --border-primary: var(--gray-20);
     --background-primary: black;    
     --background-secondary: var(--gray-10);
+    --background-secondary-hover: var(--gray-35);
+    --background-secondary-selected: var(--gray-20);
   }
 }

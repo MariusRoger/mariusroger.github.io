@@ -1,5 +1,6 @@
 <a href="{{ .Destination | safeURL }}" 
     {{- with .Title }} title="{{ . }}" {{- end }}
-    {{- if or (strings.HasPrefix .Destination "http:") (strings.HasPrefix .Destination "https:") }} target="_blank" rel="nofollow noopener noreferrer"{{ end }}>
+    {{- if or (strings.HasPrefix .Destination "http:") (strings.HasPrefix .Destination "https:") }} target="_blank" rel="nofollow noopener noreferrer"{{ end }}
+    {{- if strings.HasSuffix .Destination ".pdf"}} download{{ end }}>
     {{- .Text | safeHTML -}}
 </a>

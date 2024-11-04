@@ -1,0 +1,18 @@
+{{ $title := .Get "title" }}
+{{ $location := .Get "location" }}
+{{ $date := .Get "date" }}
+{{ $name := .Get "name"}}
+
+<details{{ if $name }} name="{{ $name }}"{{ end }}>
+    <summary>
+        <div>
+            <div class="resume-arrow"></div>
+            <p class="resume-location">{{ $location }}</p>
+            <p class="resume-title">{{ $title }}</p>
+        </div>
+        <p class="resume-date">{{ $date }}</p>
+    </summary>
+    <div class="resume-description">
+        {{ .Inner | markdownify }}
+    </div>
+</details>
